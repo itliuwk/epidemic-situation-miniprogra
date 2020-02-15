@@ -1,0 +1,177 @@
+<!--pages/index/index.wxml-->
+<view class="page">
+  <view class="map">
+    <map id="map" wx:if="{{showMap}}" longitude="{{longitude}}" show-location latitude="{{latitude}}" markers="{{markers}}" scale="13" bindcontroltap="controltap" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 100%; height: 100%;"></map>
+
+  </view>
+
+
+  <!-- 统计 -->
+  <view class="statistics">
+    <view class="title">
+      <view>全国新冠肺炎疫情</view>
+      <view bindtap="toPageMask">
+        <icon class="iconfont icon-aixin"></icon>
+        <text>官方口罩攻略</text>
+      </view>
+    </view>
+    <view class="top">
+      <view class="one">{{statistics.total.confirm||0}}</view>
+      <view class="two">{{statistics.total.suspect||0}}</view>
+      <view class="three">{{statistics.total.dead||0}}</view>
+      <view class="four">{{statistics.total.heal||0}}</view>
+    </view>
+    <view class="center">
+      <view>
+        <text>确诊人数</text>
+      </view>
+      <view>
+        <text>疑似病例</text>
+      </view>
+      <view>
+        <text>死亡人数</text>
+      </view>
+      <view>
+        <text>治愈人数</text>
+      </view>
+    </view>
+    <view class="bottom" wx:if="{{isShowToday}}">
+      <view>
+        较昨日
+        <text class="one">+{{statistics.today.confirm||0}}</text>
+      </view>
+      <view>
+        较昨日
+        <text class="two">+{{statistics.today.suspect||0}}</text>
+      </view>
+      <view>
+        较昨日
+        <text class="three">+{{statistics.today.dead||0}}</text>
+      </view>
+      <view>
+        较昨日
+        <text class="four">+{{statistics.today.heal||0}}</text>
+      </view>
+    </view>
+    <view class="bottom" wx:else>
+      <view>
+        较昨日待更新
+      </view>
+      <view>
+        较昨日待更新
+      </view>
+      <view>
+        较昨日待更新
+      </view>
+      <view>
+        较昨日待更新
+      </view>
+    </view>
+  </view>
+
+
+
+  <view class="bgyiqing">
+    <image src="../../assets/images/bg.png"></image>
+    <view class="bgInfo">
+      <view class="title" bindtap="doubt">疫情结束倒计时测算
+        <text class="doubt">算法说明?</text>
+      </view>
+      <view class="info">根据近一周数据，新增疑似病例约在
+        <text style="color:##FFA76D;font-size:40rpx">{{days}}天后归零</text>
+      </view>
+      <view class="tips">以上算法仅以数据推算，仅供参考，具体以官方发布为准</view>
+    </view>
+  </view>
+
+
+
+
+
+  <!-- banner轮播图 -->
+  <!-- <view class="bg" wx:if="{{banner.length}}">
+    <swiper indicator-dots="true" autoplay="true" interval="3000" circular="true" duration="1000">
+      <block wx:for="{{banner}}" wx:key="*this">
+        <swiper-item data-link="{{item.link}}" bindtap="toWebView">
+          <image src="{{item.image}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view> -->
+  <!-- banner轮播图 end -->
+
+
+  <!-- 搜索 -->
+  <view class="search1" bindtap="toSearch">
+    <icon class="weui-icon-search_in-box" type="search" size="20"></icon>
+    <input placeholder="搜索地点" disabled bindconfirm="wordChange"></input>
+  </view>
+
+  <!-- 信息页 -->
+  <view class="info">
+    <view class="current-location">
+      <view>
+        <text>{{address}} </text>
+        <!-- <text> 附近 </text> -->
+        <!-- <text class="relocation1" bindtap="movetoCenter">重定位</text> -->
+        <icon bindtap="movetoCenter" class="iconfont icon-shuaxin"></icon>
+      </view>
+      <button class="share" open-type="share">
+        <!-- <icon class="iconfont icon-fenxiang"></icon> -->
+        <text>分享</text>
+      </button>
+    </view>
+
+    <view class="info-content">
+
+      <block wx:if="{{markers.length>=2}}">
+        <block wx:for="{{markers}}" wx:key="index">
+          <view class="item" wx:if="{{item.id!=9999900000}}" bindtap="enlarge" data-item="{{item}}">
+            <view class="filed">
+              <view class="name">{{item.name}}</view>
+              <view>{{item.distance}}km</view>
+            </view>
+            <view class="filed filed1">
+              <view>
+                <text class="border">{{item.city}}<text wx:if="{{item.district}}">{{item.district}}</text></text>
+              </view>
+              <!-- <view wx:if="{{index==0&&address=='当前中心位置'}}" class="lately">离你最近</view> -->
+            </view>
+            <view class="filed filed1">
+              <view class="address">{{item.province}}{{item.city}}
+                <text wx:if="{{item.district}}">{{item.district}}</text>{{item.name}}</view>
+              <view></view>
+            </view>
+          </view>
+        </block>
+      </block>
+      <block wx:else>
+        <view style="text-align:center" class="loadUp">没有更多数据，也不希望有，武汉加油，中国加油</view>
+      </block>
+
+
+    </view>
+
+  </view>
+
+
+
+  <cover-view class="search cover-view" bindtap="search">
+    <cover-image src="../../assets/images/search.png"></cover-image>
+  </cover-view>
+
+  <cover-view class="relocation cover-view" bindtap="movetoCenter">
+    <cover-image src="../../assets/images/Location.png"></cover-image>
+  </cover-view>
+
+
+  <cover-view class="enlarge cover-view" bindtap="enlarge">
+    <cover-image src="../../assets/images/enlarge.png"></cover-image>
+  </cover-view>
+
+
+  <cover-view class="update cover-view">
+    <button>数据来自卫健委等官方机构发布 {{date}} 更新</button>
+  </cover-view>
+
+</view>

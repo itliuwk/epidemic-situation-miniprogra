@@ -1,0 +1,19 @@
+/* pages/donation/index.wxss */
+
+.page {
+  padding: 0 60rpx;
+}
+
+.color {
+  color: rgba(39, 39, 39, 1);
+  font-weight: bold;
+}
+
+.mb {
+  margin-bottom: 40rpx;
+}
+
+.phone {
+  color: #188ae2;
+  margin-left: 20rpx;
+}

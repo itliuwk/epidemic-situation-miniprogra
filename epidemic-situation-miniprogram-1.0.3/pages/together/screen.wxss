@@ -1,0 +1,49 @@
+/* pages/together/screen.wxss */
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  padding: 30rpx;
+  background: #8ab;
+}
+
+.screen {
+  width: 100%;
+  background: #fff;
+  padding: 40rpx;
+  border-radius: 20rpx;
+}
+
+.screen>view:nth-child(1) {
+  font-size: 40rpx;
+}
+
+.date .picker, .tripNo input {
+  height: 90rpx;
+  line-height: 90rpx;
+  background: #eee;
+  border-radius: 15rpx;
+  margin: 30rpx 0;
+  padding-left: 20rpx;
+}
+
+.query {
+  margin-top: 70rpx;
+  width: 100%;
+  border-radius: 15rpx;
+  background: #0076fd;
+  color: #fff;
+  text-align: center;
+  line-height: 100rpx;
+}
+
+.color {
+  color: #666;
+}
+
+.all {
+  text-align: center;
+  font-size: 40rpx;
+  color: #fff;
+  margin-top: 40rpx;
+}

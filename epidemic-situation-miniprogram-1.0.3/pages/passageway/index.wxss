@@ -1,0 +1,24 @@
+/* pages/passageway/index.wxss */
+
+.page {
+  padding: 30rpx;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 35rpx;
+}
+
+.content {
+  margin: 30rpx 0;
+}
+
+.info {
+  text-align: center;
+}
+
+image {
+  width: 100vw;
+  height: 1300rpx;
+}

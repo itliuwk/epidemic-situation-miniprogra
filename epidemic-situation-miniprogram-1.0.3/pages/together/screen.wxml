@@ -1,0 +1,23 @@
+<!--pages/together/screen.wxml-->
+<view class="page">
+
+  <view class="screen">
+    <view>请选择一项或多项</view>
+    <view class="date" wx:if="{{params.item=='train'||params.item=='flight'}}">
+      <picker mode="date" value="{{params.tripDate}}" bindchange="bindDateChange">
+        <view class="picker">
+          <text wx:if="{{params.tripDate}}">{{params.tripDate}}</text>
+          <text class="color" wx:else>输入日期</text>
+        </view>
+      </picker>
+    </view>
+    <view class="tripNo">
+      <input placeholder="{{placeholder}}" bindinput="tripNoChange" placeholder-class="color"></input>
+    </view>
+    <view class="query" bindtap="queryTap">开始查询</view>
+  </view>
+
+  <view class="all" bindtap="queryAll" wx:if="{{params.item=='train'|| params.item=='flight'}}">
+    显示全部{{params.item=='train'?'火车':'飞机'}}行程
+  </view>
+</view>

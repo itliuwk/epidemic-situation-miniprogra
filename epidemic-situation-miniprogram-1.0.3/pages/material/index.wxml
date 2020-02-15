@@ -1,0 +1,50 @@
+<!--pages/me/index.wxml-->
+<view class="page">
+  <view class="bg" wx:if="{{banner.length}}">
+    <!-- <image src='../../assets/images/bg.png'></image> -->
+    <swiper indicator-dots="true" autoplay="true" interval="3000" circular="true" duration="1000">
+      <block wx:for="{{banner}}" wx:key="*this">
+        <swiper-item data-link="{{item.link}}" bindtap="toWebView">
+          <image src="{{item.image}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class="content">
+
+
+
+    <view bindtap="toPageMask" data-url="/pages/mask/index">
+      <view>
+        <image src="../../assets/images/help/14.png"></image>
+      </view>
+      <view style="  margin-top: 20rpx;">口罩攻略</view>
+    </view>
+
+    <view bindtap="toPage" data-url="/pages/donation/index">
+      <view>
+        <image src="../../assets/images/help/11.png"></image>
+      </view>
+      <view style="  margin-top: 20rpx;">消毒液</view>
+    </view>
+
+
+    <view bindtap="toPage" data-url="/pages/feedback/index">
+      <view>
+        <image src="../../assets/images/help/10.png"></image>
+      </view>
+      <view style="  margin-top: 20rpx;">消毒设备</view>
+    </view>
+
+    <view bindtap="toPage" data-url="/pages/about/index">
+      <view>
+        <image src="../../assets/images/help/12.png"></image>
+      </view>
+      <view style="  margin-top: 20rpx;">其他防护</view>
+    </view>
+
+  </view>
+
+
+</view>

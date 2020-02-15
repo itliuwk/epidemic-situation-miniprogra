@@ -1,0 +1,4 @@
+<!--pages/mask/detail.wxml-->
+<view class="page">
+  <rich-text nodes="{{content}}" bindtap="tap"></rich-text>
+</view>

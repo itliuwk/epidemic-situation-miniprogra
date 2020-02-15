@@ -1,0 +1,15 @@
+<!--pages/mask/index.wxml-->
+<view class="page">
+  <view class="header">
+    <view>省级行政区</view>
+    <view>市级</view>
+    <view>预约方式</view>
+  </view>
+  <view>
+    <view wx:for="{{masks}}" wx:key="{{index}}" data-id="{{item.id}}" bindtap="viewDetail" class="content">
+      <view>{{item.province}}</view>
+      <view>{{item.city}}</view>
+      <view>查看详情</view>
+    </view>
+  </view>
+</view>

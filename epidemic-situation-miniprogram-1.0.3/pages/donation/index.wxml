@@ -1,0 +1,30 @@
+<!--pages/donation/index.wxml-->
+<view class="page">
+  <view class="color mb">(附件下载请登陆——湖北省红十字会门户网站
+    <text selectable='true' data-name='http://www.hbsredcross.org.cn/'>http://www.hbsredcross.org.cn/</text> ）</view>
+  <view class="mb">
+    <text class="color">1.接收国内捐赠物资种类。</text> 以医用防护服、 N95口罩、医用（外科）口罩、正压隔离 衣、防护面罩、护目镜、消毒液等。暂不接 受与疫情防控无关的物资。（标准见附件 1）
+  </view>
+  <view class="mb">
+    <text class="color">2.填写捐赠意向书。</text>捐赠方填写《定向捐赠 函（物资）》（见附件2）或《非定向捐赠 函（物资）》（见附件3），并提供相应的 品质完好及物资价值证明资料，发送到指定 邮箱：
+    <text selectable='true'>454558530@qq.com</text> ，湖北省红十 字会确认捐赠函。
+  </view>
+  <view class="mb">
+    <text class="color">3.发货运送与接收。</text> 定向捐赠由捐赠人与受 赠单位对接沟通后，直接按受赠单位提供的 地址发货。非定向捐赠由湖北
+  </view>
+  <view class="mb">
+    <text class="color">4.开具捐赠票据。</text> 受赠单位接受到捐赠物资后，出具接收收据，省红十字会或其他市（州）红十字会根据受赠单位出具的接收收据开具捐赠票据。
+  </view>
+  <view class="mb">
+    <text class="color">5.国内物资捐赠。</text>
+  </view>
+  <view class="mb">
+    联系人：卫二黑
+    <text catchtap='freeTell' class="phone" data-phone="027-87716773">027-87716773</text>
+  </view>
+  <view class="mb">
+    热线电话：
+    <text catchtap='freeTell' class="phone" style="margin:0" data-phone="027-87327533">027-87327533</text>
+    <text catchtap='freeTell' class="phone" data-phone="027-87327909">027-87327909</text>
+  </view>
+</view>

@@ -1,0 +1,35 @@
+/* pages/me/index.wxss */
+
+.bg {
+  width: 100vw;
+  height: 340rpx;
+}
+
+.bg swiper, .bg image {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  margin-top: 20rpx;
+}
+
+.content>view {
+  width: 33.33%;
+  display: inline-block;
+  text-align: center;
+  height: 200rpx;
+  color: #188ae2;
+}
+
+.content>view icon {
+  font-size: 80rpx;
+  color: #188ae2;
+}
+
+.content image {
+  width: 100rpx;
+  height: 100rpx;
+  position: relative;
+  top: 30rpx;
+}

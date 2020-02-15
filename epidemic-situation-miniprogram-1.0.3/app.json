@@ -1,0 +1,76 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/index",
+    "pages/material/index",
+    "pages/feedback/index",
+    "pages/about/index",
+    "pages/enlarge/index",
+    "pages/od/index",
+    "pages/webview/index",
+    "pages/donation/index",
+    "pages/together/index",
+    "pages/passageway/index",
+    "pages/mask/index",
+    "pages/mask/detail",
+    "pages/help/index",
+    "pages/together1/index",
+    "pages/together/screen",
+    "pages/together/result"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "查疫问药",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#2c2c2c",
+    "selectedColor": "#1AAD19",
+    "backgroundColor": "#FFF",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "查疫情",
+        "iconPath": "./assets/images/nav/nearby.png",
+        "selectedIconPath": "./assets/images/nav/selnearby.png"
+      },
+      {
+        "pagePath": "pages/od/index",
+        "text": "查门诊",
+        "iconPath": "./assets/images/nav/od.png",
+        "selectedIconPath": "./assets/images/nav/selod.png"
+      },
+      {
+        "pagePath": "pages/material/index",
+        "text": "问物资",
+        "iconPath": "./assets/images/nav/material.png",
+        "selectedIconPath": "./assets/images/nav/selmaterial.png"
+      },
+      {
+        "pagePath": "pages/together/index",
+        "text": "查同乘",
+        "iconPath": "./assets/images/nav/search.png",
+        "selectedIconPath": "./assets/images/nav/selsearch.png"
+      },
+      {
+        "pagePath": "pages/help/index",
+        "text": "求帮助",
+        "iconPath": "./assets/images/nav/help.png",
+        "selectedIconPath": "./assets/images/nav/selhelp.png"
+      }
+    ]
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wx2ac2313767a99df9",
+    "wx3964962647b49f72"
+  ],
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

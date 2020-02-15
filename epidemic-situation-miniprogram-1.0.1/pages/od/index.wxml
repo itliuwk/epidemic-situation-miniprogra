@@ -1,0 +1,50 @@
+<!--pages/od/index.wxml-->
+<view class="page">
+
+	<view class="screen">
+		<picker bindchange="bindProvinceChange" value="{{index}}" range="{{provinces}}" range-key="name" style="display:inline-block">
+			<view class="picker" style="display:inline-block">
+				<text wx:if="{{province}}">{{province}}</text>
+				<text wx:else>{{provinces[index].name}}</text>
+			</view>
+			<icon class="iconfont icon-xiala1"></icon>
+		</picker>
+
+
+		<picker bindchange="bindCityChange" value="{{index}}" range="{{citys}}" range-key="name" style="display:inline-block">
+			<view class="picker" style="display:inline-block">
+				<text class="city" wx:if="{{city}}">{{city}}</text>
+				<text wx:else>{{citys[cityIdx].name}}</text>
+			</view>
+			<icon class="iconfont icon-xiala1"></icon>
+		</picker>
+	</view>
+
+	<view class="search">
+		<icon class="weui-icon-search_in-box" type="search" size="20"></icon>
+		<input placeholder="搜索医院" bindconfirm="wordChange"></input>
+	</view>
+
+	<view class="content">
+
+		<view class="item" wx:for="{{hospitals}}" wx:key="index" bindtap="openMap" data-item="{{item}}" data-latitude="{{item.latitude}}" data-longitude="{{item.longitude}}">
+			<view>{{index+1}}</view>
+			<view>
+				<view class="title">{{item.name}}</view>
+				<view class="info">
+					<text>{{item.core}}</text>
+					<text>{{item.fever}}</text>
+				</view>
+				<view class="address">{{item.addressName}}</view>
+			</view>
+			<view>
+				<image src="../../assets/images/nav.png"></image>
+				<view>{{item.distance}}km</view>
+			</view>
+		</view>
+
+
+	</view>
+
+
+</view>

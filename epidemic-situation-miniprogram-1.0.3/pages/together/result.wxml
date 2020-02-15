@@ -1,0 +1,84 @@
+<!--pages/together/result.wxml-->
+<view class="page">
+
+  <view class="info">
+    <view>行程查询结果
+    </view>
+    <view>
+      {{count}} 数据更新截止时间 {{updateDate}}
+    </view>
+  </view>
+
+  <view class="content">
+    <scroll-view scroll-y="true" style="height:100%" bindscrolltolower="bindscrolltolower">
+      <block wx:if="{{results.length}}">
+
+        <view class="item" wx:for="{{results}}" :key='*this'>
+          <view>
+            <view class="date">{{item.tripDate}}</view>
+            <view class="icon">
+              <icon wx:if="{{item.tripType=='train'}}" class="iconfont icon-huoche"></icon>
+              <icon wx:else class="iconfont icon-feiji"></icon>
+            </view>
+            <view wx:if="{{item.tripType=='train'}}" class="type">火车</view>
+            <view wx:else class="type">飞机</view>
+          </view>
+          <view class="item-info">
+            <view>
+              <view class="color">车次号</view>
+              <view class="fw">{{item.tripNo}}</view>
+              <view class="color">患者上车</view>
+              <view>{{item.tripDepname}}</view>
+              <view>{{item.tripDeptime}}</view>
+            </view>
+            <view>
+              <view class="opacity">哈哈</view>
+              <view class="opacity fw">哈哈</view>
+              <view class="color">患者抵达</view>
+              <view>{{item.tripArrname}}</view>
+              <view>{{item.tripArrtime}}</view>
+            </view>
+            <!-- <view class="jiantou">
+            <icon class="iconfont icon-xiala"></icon>
+          </view> -->
+            <view class="tips">有肺炎患者乘坐</view>
+          </view>
+        </view>
+      </block>
+      <block wx:else>
+        <view style="text-align:center">查无数据,请确认是否输入正确</view>
+        <!-- <view class="item" wx:if="{{result.tripDate}}">
+        <view>
+          <view class="date">{{result.tripDate}}</view>
+          <view class="icon">
+            <icon wx:if="{{result.tripType=='train'}}" class="iconfont icon-huoche"></icon>
+            <icon wx:else class="iconfont icon-feiji"></icon>
+          </view>
+          <view wx:if="{{result.tripType=='train'}}" class="type">火车</view>
+          <view wx:else class="type">飞机</view>
+        </view>
+        <view class="item-info">
+          <view>
+            <view class="color">车次号</view>
+            <view class="fw">{{result.tripNo}}</view>
+            <view class="color">患者上车</view>
+            <view>{{result.tripDepname}}</view>
+            <view>{{result.tripDeptime}}</view>
+          </view>
+          <view>
+            <view class="opacity">哈哈</view>
+            <view class="opacity fw">哈哈</view>
+            <view class="color">患者抵达</view>
+            <view>{{result.tripArrname}}</view>
+            <view>{{result.tripArrtime}}</view>
+          </view>
+          <!-- <view class="jiantou">
+            <icon class="iconfont icon-xiala"></icon>
+          </view> 
+      </view>
+    </view> -->
+      </block>
+    </scroll-view>
+  </view>
+
+</view>

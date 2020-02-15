@@ -1,0 +1,167 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.10.1",
+	"appid": "wx6e405dd5088e33ee",
+	"projectname": "epidemic-situation-miniprogram",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "搜索",
+					"pathName": "pages/search/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "物资",
+					"pathName": "pages/material/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "反馈",
+					"pathName": "pages/feedback/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "关于",
+					"pathName": "pages/about/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "疫情地图",
+					"pathName": "pages/enlarge/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "门诊",
+					"pathName": "pages/od/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "捐助指引",
+					"pathName": "pages/donation/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "查同乘",
+					"pathName": "pages/together/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/webview/index",
+					"pathName": "pages/webview/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "通道",
+					"pathName": "pages/passageway/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "口罩攻略",
+					"pathName": "pages/mask/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 11,
+					"name": "口罩-详情",
+					"pathName": "pages/mask/detail",
+					"query": "id=4793940793947392",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "帮助",
+					"pathName": "pages/hlelp/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 13,
+					"name": "查同乘筛选",
+					"pathName": "pages/together/screen",
+					"query": "item=train",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "查同乘结果",
+					"pathName": "pages/together/result",
+					"query": "item=train",
+					"scene": null
+				}
+			]
+		}
+	}
+}

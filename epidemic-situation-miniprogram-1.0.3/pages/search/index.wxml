@@ -1,0 +1,67 @@
+<!--pages/search/index.wxml-->
+<view class="page">
+
+  <view class="screen">
+    <view>
+
+      <picker mode="region" bindchange="bindRegionChange" value="{{region}}" style="display:inline-block">
+        <view class="picker" style="display:inline-block">
+          <text wx:if='{{region.length}}'>{{region[2]}}</text>
+          <text wx:else>地区</text>
+        </view>
+        <icon class="iconfont icon-xiala1"></icon>
+      </picker>
+
+      <!-- <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+				<view class="picker" style="display:inline-block">
+					<text>{{array[index]}}</text>
+				</view>
+				<icon class="iconfont icon-xiala1"></icon>
+			</picker> -->
+
+
+
+
+
+    </view>
+    <view bindtap="doubt">可靠性
+      <text class="doubt">?</text>
+    </view>
+  </view>
+
+  <view class="content">
+
+    <scroll-view scroll-y="true" style="height: 100%;" bindscrolltolower="bindscrolltolower">
+
+      <block wx:if="{{markers.length}}">
+        <view class="item" wx:for="{{markers}}" wx:key="*this" bindtap="enlarge" data-item="{{item}}">
+          <view class="filed">
+            <image src="../../assets/images/virus.png"></image>
+            <text>{{item.name}}</text>
+          </view>
+          <view class="filed1">
+            <text class="border city">{{item.city}} </text>
+            <text class="border district" wx:if="{{item.district}}">{{item.district}}</text>
+          </view>
+          <view class="filed2 address">{{item.province}}{{item.city}}
+            <text wx:if="{{item.district}}">{{item.district}}</text>{{item.name}}</view>
+        </view>
+      </block>
+      <block wx:else>
+        <view class="loadUp" wx:if="{{!loadUp}}">没有更多数据，也不希望有，武汉加油，中国加油</view>
+      </block>
+
+      <view wx:if="{{loadUp}}" class="loadUp">没有更多数据，也不希望有，武汉加油，中国加油</view>
+
+
+    </scroll-view>
+
+
+
+
+
+
+
+  </view>
+
+</view>

@@ -1,0 +1,91 @@
+/* pages/together/index.wxss */
+
+.page {
+  width: 100vw;
+}
+
+.open {
+  display: inline-block;
+  background: #188ae2;
+  color: #fff;
+  border-radius: 30rpx;
+  padding: 10rpx 30rpx;
+  font-weight: normal;
+  font-size: 30rpx;
+}
+
+image {
+  width: 100vw;
+  height: 300rpx;
+}
+
+.info {
+  text-align: center;
+  color: rgba(197, 197, 197, 1);
+  margin: 30rpx 0;
+  font-size: 25rpx;
+}
+
+.toMiniprogram {
+  padding-left: 50rpx;
+}
+
+.toMiniprogram .item {
+  display: flex;
+  text-align: left;
+  padding-bottom: 20rpx;
+  border-bottom: 1px solid #eee;
+}
+
+.toMiniprogram .item>view {
+  flex: 1;
+}
+
+.toMiniprogram .item>view image {
+  width: 90rpx;
+  height: 90rpx;
+}
+
+.toMiniprogram .item>view:nth-child(2) {
+  flex: 5;
+}
+
+.toMiniprogram .tips {
+  color: rgba(178, 178, 178, 1);
+  font-size: 25rpx;
+}
+
+.jiantou {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jiantou icon {
+  font-size: 40rpx;
+  transform: rotate(90deg);
+}
+
+.content {
+  margin-top: 20rpx;
+}
+
+.content>view {
+  width: 33.33%;
+  display: inline-block;
+  text-align: center;
+  height: 200rpx;
+  color: #188ae2;
+}
+
+.content>view icon {
+  font-size: 80rpx;
+  color: #188ae2;
+}
+
+.content image {
+  width: 100rpx;
+  height: 100rpx;
+  position: relative;
+  top: 30rpx;
+}

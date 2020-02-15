@@ -1,0 +1,7 @@
+<!--pages/passageway/index.wxml-->
+<view class="page">
+  <view class="title">扩散！人民日报征集新冠肺炎求助者信息</view>
+  <view class="content">今天，人民日报为新冠肺炎求助者开通专用求助通道， 各位朋友可通过扫描文末图片二维码或点击阅读原文， 将你了解到的确诊、疑似、密切接触者、无法排除的发 热者，以及目前还未得到隔离收治的人员信息，尽快告 知我们。我们会在第一时间将求助需求转予相关部门。</view>
+  <view class="info">守望相助，共克时艰。我们与你在一起！</view>
+</view>
+<image src="../../assets/images/renmin.png"></image>

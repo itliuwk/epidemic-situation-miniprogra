@@ -1,0 +1,6 @@
+/* pages/mask/detail.wxss */
+
+.page {
+  padding: 20rpx;
+  box-sizing: border-box;
+}

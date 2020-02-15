@@ -1,0 +1,25 @@
+/* pages/mask/index.wxss */
+
+.page {
+  padding: 20rpx;
+}
+
+.header, .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100rpx;
+}
+
+.header>view, .content>view {
+  flex: 1;
+}
+
+.content>view:nth-child(3) {
+  color: #188ae2;
+}
+
+.page .content:nth-child(odd) {
+  background: #eee;
+}

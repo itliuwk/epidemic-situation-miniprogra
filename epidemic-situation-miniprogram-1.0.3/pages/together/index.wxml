@@ -1,0 +1,53 @@
+<!--pages/together/index.wxml-->
+<!-- <view class="page" wx:if="{{isShow}}">
+  <text class="open" bindtap="together">打开查同乘</text>
+</view> -->
+<view class="page">
+  <image src="../../assets/images/Jinyabanner.png"></image>
+  <view class="info">
+    <text>-- 提醒：如曾与确诊患者同乘，尽快采取相应措施 --</text>
+  </view>
+  <view class="toMiniprogram">
+
+    <view class="item train" bindtap="toScreen" data-item="train">
+      <view>
+        <icon class="iconfont icon-huoche"></icon>
+      </view>
+      <view>
+        <view class="title">查询您乘坐的火车</view>
+        <view class="tips">输入日期/车次,查看该车次是否有肺炎患者同行</view>
+      </view>
+    </view>
+
+
+    <view class="item flight" bindtap="toScreen" data-item="flight">
+      <view>
+        <icon class="iconfont icon-feiji"></icon>
+      </view>
+      <view>
+        <view class="title">查询您乘坐的飞机</view>
+        <view class="tips">输入日期/航班号,查看该航班是否有肺炎患者同行</view>
+      </view>
+    </view>
+
+
+
+    <view class="item city" bindtap="toScreen" data-item="city">
+      <view>
+        <icon class="iconfont icon-chengshi"></icon>
+      </view>
+      <view>
+        <view class="title">按城市查询</view>
+        <view class="tips">查看该城市中是否有肺炎患者出现的航班/火车/公交/地点</view>
+      </view>
+    </view>
+
+
+
+  </view>
+
+
+
+
+
+</view>

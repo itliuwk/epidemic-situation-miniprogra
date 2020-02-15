@@ -1,0 +1,51 @@
+<!--pages/me/index.wxml-->
+<view class="page">
+ 
+
+  <view class="content">
+
+    <view bindtap="toPage" data-url="/pages/passageway/index">
+      <view>
+        <image src="../../assets/images/help/13.png"></image>
+      </view>
+      <view style="  margin-top: 20rpx;">求助通道</view>
+    </view>
+    <view bindtap="toPage" data-url="/pages/donation/index">
+      <view>
+        <image src="../../assets/images/help/4.png"></image>
+      </view>
+      <view style="  margin-top: 20rpx;">爱心捐助指引</view>
+    </view>
+
+    <view bindtap="toPage" data-url="/pages/feedback/index">
+      <view>
+        <image src="../../assets/images/help/8.png"></image>
+      </view>
+      <view style="  margin-top: 20rpx;">意见反馈</view>
+    </view>
+
+    <view bindtap="toPage" data-url="/pages/about/index">
+      <view>
+        <image src="../../assets/images/help/9.png"></image>
+      </view>
+      <view style="  margin-top: 20rpx;">关于</view>
+    </view>
+
+    <view bindtap="toPageView" style="  overflow: hidden; opacity: 0;" data-url="https://h5.133.cn/gtgjwap/h5/virusTrip/home?from=groupmessage&isappinstalled=0">
+      <view>
+        <image src="../../assets/images/help/9.png"></image>
+      </view>
+      <view style="  margin-top: 20rpx;">关于</view>
+    </view>
+
+    <view bindtap="toPageView" style="  overflow: hidden;opacity: 0;" data-url="https://feiyan.wecity.qq.com/wuhan/dist/index.html#/facemask-apply?_scope=snsapi_base">
+      <view>
+        <image src="../../assets/images/help/9.png"></image>
+      </view>
+      <view style="  margin-top: 20rpx;">关于</view>
+    </view>
+
+  </view>
+
+
+</view>

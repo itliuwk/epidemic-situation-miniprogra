@@ -1,0 +1,391 @@
+/* pages/index/index.wxss */
+
+.page {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.map {
+  height: 450rpx;
+  background: #f2f2f2;
+}
+
+.bg {
+  width: 100vw;
+  height: 240rpx;
+  padding: 30rpx;
+  padding-bottom: 0;
+}
+
+.bg swiper, .bg image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10rpx;
+}
+
+.info {
+  /* background: #fff; *//* margin-top: 20rpx; */
+}
+
+.current-location {
+  font-size: 40rpx;
+  padding: 0 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.current-location >view:nth-child(1) {
+  flex: 5;
+}
+
+.current-location >view:nth-child(1) text {
+  font-size: 35rpx;
+}
+
+.current-location .icon-shuaxin {
+  font-size: 45rpx;
+  color: #188ae2;
+}
+
+.current-location >view:nth-child(2) {
+  font-size: 25rpx;
+}
+
+.share {
+  flex: 1;
+  background: #188ae2;
+  color: #fff;
+  border-radius: 30rpx;
+  padding: 5rpx 25rpx;
+  font-weight: normal;
+}
+
+.share text {
+  margin-left: 10rpx;
+}
+
+.share icon {
+  position: relative;
+  top: -6rpx;
+}
+
+.current-location button:not([size='mini']) {
+  min-height: 0;
+  width: 184px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info-content {
+  margin-top: 50rpx;
+}
+
+.info-content .item {
+  border-bottom: 1px solid #eee;
+  padding: 0 30rpx;
+  padding-bottom: 20rpx;
+}
+
+.info-content .item>view:nth-child(1) {
+  margin-top: 50rpx;
+}
+
+.info-content .filed {
+  display: flex;
+  font-size: 35rpx;
+  border-bottom: 2prx solid #eee;
+}
+
+.info-content .filed view:nth-child(1) {
+  flex: 4;
+}
+
+.info-content .filed  .name {
+  flex: 4;
+  font-weight: bold;
+}
+
+.info-content .filed view:nth-child(2) {
+  flex: 2;
+  font-weight: bold;
+  text-align: right;
+  font-size: 30rpx;
+}
+
+.info-content .filed .address {
+  color: rgba(148, 148, 148, 1);
+  font-weight: normal;
+}
+
+.info-content .filed  .city {
+  background: rgba(172, 60, 60, 1);
+  color: #eee;
+}
+
+.info-content .filed  .district {
+  color: #eee;
+  background: rgba(230, 105, 105, 1);
+  margin-left: 30rpx;
+}
+
+.lately {
+  color: #188ae2;
+}
+
+.filed1 {
+  margin-top: 30rpx;
+}
+
+.filed1 view {
+  font-size: 30rpx;
+}
+
+.filed1 view:nth-child(1)> .border {
+  padding: 5rpx 10rpx;
+  border-radius: 20rpx;
+  font-size: 28rpx;
+  color: rgba(106, 106, 106, 1);
+  font-weight: normal;
+  border: 1rpx solid #888;
+}
+
+.search {
+  position: absolute;
+  top: 70rpx;
+  left: 30rpx;
+}
+
+.search cover-image {
+  width: 60rpx;
+  height: 60rpx;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.relocation {
+  position: absolute;
+  top: 260rpx;
+  right: 30rpx;
+  z-index: 99;
+}
+
+.relocation cover-image {
+  width: 60rpx;
+  height: 60rpx;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.enlarge {
+  position: absolute;
+  top: 350rpx;
+  right: 30rpx;
+  z-index: 99;
+}
+
+.update {
+  position: absolute;
+  top: 0;
+  z-index: 99;
+  text-align: center;
+}
+
+.update button:not([size='mini']) {
+  color: rgba(255, 255, 255, 1);
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(60, 89, 233, 1);
+  font-weight: normal;
+  font-size: 28rpx;
+  border-radius: 0;
+  padding: 5rpx 10rpx;
+}
+
+.enlarge cover-image {
+  width: 60rpx;
+  height: 60rpx;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.loadUp {
+  text-align: center;
+  margin: 20rpx 0;
+  font-size: 25rpx;
+  color: #ccc;
+}
+
+.search1 {
+  position: relative;
+  padding: 30rpx 20rpx;
+  box-sizing: border-box;
+  width: 100vw;
+}
+
+.search1 input {
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 100px;
+  border: 1px solid #eee;
+  background: rgba(248, 248, 248, 1);
+  padding-left: 60rpx;
+}
+
+.search1 icon {
+  left: 40rpx;
+  top: 45rpx;
+}
+
+.relocation1 {
+  display: inline-block;
+  background: #188ae2;
+  color: #fff;
+  height: 50rpx;
+  line-height: 50rpx;
+  border-radius: 30rpx;
+  padding: 0 25rpx;
+  font-weight: normal;
+  font-size: 25rpx;
+  position: relative;
+  top: -5rpx;
+}
+
+.statistics .top, .statistics .center, .statistics .bottom {
+  display: flex;
+}
+
+.statistics .top>view, .statistics .center>view, .statistics .bottom>view {
+  flex: 1;
+  text-align: center;
+}
+
+.statistics .top view {
+  font-size: 35rpx;
+  font-weight: bolder;
+}
+
+.statistics .center {
+  margin: 10rpx 0;
+}
+
+.statistics .center>view text {
+  background: rgba(236, 236, 236, 1);
+  padding: 5rpx 10rpx;
+  border-radius: 10rpx;
+  font-size: 25rpx;
+  color: rgba(74, 74, 74, 1);
+}
+
+.statistics .bottom>view {
+  color: #bcbcbc;
+  font-size: 25rpx;
+}
+
+.page .statistics .one {
+  color: rgba(255, 63, 23, 1);
+}
+
+.page .statistics .two {
+  color: rgba(255, 147, 23, 1);
+}
+
+.page .statistics .three {
+  color: rgba(14, 35, 59, 1);
+}
+
+.page .statistics .four {
+  color: rgba(23, 184, 255, 1);
+}
+
+.page .statistics  .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page .statistics  .title view:nth-child(1) {
+  margin: 20rpx 20rpx 10rpx;
+  margin-left: 35rpx;
+  padding-left: 10rpx;
+  flex: 1;
+  border-left: 10rpx solid #3c59e9;
+}
+
+.page .statistics  .title view:nth-child(2) {
+  margin: 20rpx 20rpx 10rpx;
+  flex: 1;
+  text-align: right;
+  padding-right: 15rpx;
+}
+
+.page .statistics  .title view:nth-child(2) text {
+  border-bottom: 1px solid #188ae2;
+  vertical-align: middle;
+}
+
+.page .statistics  .title view:nth-child(2) icon {
+  color: red;
+  vertical-align: top;
+}
+
+.bgyiqing .title {
+  margin: 20rpx 0 0 20rpx;
+  padding-left: 10rpx;
+  border-left: 10rpx solid #fff;
+  color: #fff;
+  font-weight: bold;
+}
+
+.bgyiqing .info {
+  margin: 20rpx 0;
+  text-align: center;
+  font-size: 30rpx;
+  color: #fff;
+  width: 100%;
+  font-weight: bolder;
+}
+
+.bgyiqing .tips {
+  margin: 20rpx 0;
+  color: #6c9bf1;
+  font-size: 25rpx;
+  text-align: center;
+  width: 100%;
+}
+
+.bgyiqing {
+  height: 250rpx;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15rpx;
+}
+
+.bgyiqing image {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.bgInfo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 15rpx;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.doubt {
+  display: inline-block;
+  font-size: 25rpx;
+  margin-left: 20rpx;
+  padding: 0 5rpx;
+  color: #fff;
+  line-height: 30rpx;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+}

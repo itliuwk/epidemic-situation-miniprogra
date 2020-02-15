@@ -1,0 +1,9 @@
+<!--pages/about/index.wxml-->
+<view class="page">
+	<view>当前只支持广东省内，所有数据均来自官方渠道，如卫健委。任何谣言或未经官方确定一律屏蔽。</view>
+	<view>如有志愿者提供、告知、整理准备的官方数据，欢迎联系微信：hyy13928222895</view>
+	<view>声明：来自全国各地的志愿者，根据官方发布的信息进行整理。整理数据的位置存在一定偏移，一切以官方数据为准</view>
+	<view>
+			<image src='../../assets/images/code.png'></image>
+	</view>
+</view>

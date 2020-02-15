@@ -1,0 +1,87 @@
+/* pages/od/index.wxss */
+
+.screen {
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  width: 100vw;
+}
+
+.screen  picker {
+  margin: 0 40rpx;
+}
+
+.search {
+  position: relative;
+  padding: 30rpx 40rpx;
+  border-bottom: 1px solid #eee;
+}
+
+.search input {
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 100px;
+  border: 1px solid #eee;
+  background: rgba(248, 248, 248, 1);
+  padding-left: 60rpx;
+}
+
+.search icon {
+  left: 60rpx;
+  top: 45rpx;
+}
+
+.item {
+  display: flex;
+  margin: 0 30rpx;
+  padding: 20rpx 0;
+  border-bottom: 1px solid #eee;
+}
+
+
+
+.item>view:nth-child(1) {
+  flex: 1;
+  color: rgba(142, 142, 142, 1);
+}
+
+.item>view:nth-child(2) {
+  flex: 7;
+}
+
+.item>view:nth-child(3) {
+  flex: 3;
+  text-align: center;
+}
+
+.item>view:nth-child(3) image {
+  height: 100rpx;
+  width: 100rpx;
+}
+
+.item .title {
+  font-size: 35rpx;
+}
+
+.item .info {
+  margin: 10rpx 0;
+}
+
+.item .info text {
+  background: rgba(255, 212, 41, 1);
+  border-radius: 38px;
+  padding: 5rpx 15rpx;
+  color: rgba(238, 238, 238, 1);
+  margin: 0 15rpx;
+  font-size: 25rpx;
+}
+
+.item .info text:nth-child(1) {
+  background: rgba(253, 137, 140, 1);
+  margin-left: 0;
+}
+
+.item .address {
+  color: rgba(148, 148, 148, 1);
+  font-size: 28rpx;
+}
