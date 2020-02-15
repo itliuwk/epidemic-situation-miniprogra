@@ -1,0 +1,25 @@
+/* pages/enlarge/index.wxss */
+
+.map {
+  width: 100vw;
+  height: 100vh;
+}
+
+.relocation {
+  position: fixed;
+  bottom: 120rpx;
+  right: 30rpx;
+}
+
+.narrow {
+  position: fixed;
+  bottom: 30rpx;
+  right: 30rpx;
+}
+
+.relocation cover-image, .narrow cover-image {
+  width: 60rpx;
+  height: 60rpx;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}

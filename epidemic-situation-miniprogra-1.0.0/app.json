@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/index",
+    "pages/me/index",
+    "pages/feedback/index",
+    "pages/about/index",
+    "pages/enlarge/index"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "查疫查",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#2c2c2c",
+    "selectedColor": "#1AAD19",
+    "backgroundColor": "#FFF",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "附近",
+        "iconPath": "./assets/images/nearby.png",
+        "selectedIconPath": "./assets/images/selnearby.png"
+      },
+      {
+        "pagePath": "pages/search/index",
+        "text": "搜索",
+        "iconPath": "./assets/images/search.png",
+        "selectedIconPath": "./assets/images/selsearch.png"
+      },
+      {
+        "pagePath": "pages/me/index",
+        "text": "帮助",
+        "iconPath": "./assets/images/me.png",
+        "selectedIconPath": "./assets/images/selme.png"
+      }
+    ]
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wx2ac2313767a99df9"
+  ],
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

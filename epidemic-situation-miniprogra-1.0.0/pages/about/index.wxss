@@ -1,0 +1,20 @@
+/* pages/about/index.wxss */
+
+.page {
+  padding: 200rpx 55rpx;
+  text-align: center;
+}
+
+.about {
+  font-size: 50rpx;
+}
+
+.page>view {
+  margin: 20rpx 0;
+}
+
+.page>view image {
+  margin-top: 50rpx;
+  width: 400rpx;
+  height: 400rpx;
+}
